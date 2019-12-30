@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<title>mWeb</title>
+	
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+	
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	
+		<link rel="stylesheet" href="css/styles.min.css">
+	</head>
+<body>
+	<div class="container">
+		<div class="general">
+			<div id="quiz1">
+				<h1>Мы так близки друг к другу;) Но все же я проверю тебя...)</h1>
+				<h2 class="h2">Каждый неправильный ответ возваращает тебя на начало - не злись;)</h2>
+				<div>Кто был зам.головы на тех самых первых выборах?</div>
+				<ul class="lisp">
+					<li>
+						<a href="#" id="answer1">Таня</a>
+					</li>
+					<li>
+						<a href="">Юля</a>
+					</li>
+					<li>
+						<a href="">Света</a>
+					</li>
+				</ul>
+			</div>
+			<div id="quiz2" style="display: none;">				
+				<div>Что такое Болванка?</div>
+				<ul class="lisp">
+					<li>
+						<a href="">Диск</a>
+					</li>
+					<li>
+						<a href="">Носитель информации</a>
+					</li>
+					<li>
+						<a href="#" id="answer2">Человек-болванка;)</a>
+					</li>
+				</ul>
+			</div>
+			<div id="quiz3" style="display: none;">
+				<h1>Вопрос с *</h1>		
+				<div>Как зовут мужа Селедець?</div>
+				<ul class="lisp">
+					<li>
+						<a href="">Алексей</a>
+					</li>
+					<li>
+						<a href="">Андрей</a>
+					</li>
+					<li>
+						<a href="#" id="answer3">Олег</a>
+					</li>
+				</ul>
+			</div>
+			<div id="quiz4" style="display: none;">
+				<div>Когда я подарил тебе цветы на др - какого цвета была упаковка?) (Я конечно могу ошибаться, но вроде я помню:)</div>
+				<ul class="lisp">
+					<li>
+						<a href="">Жетлая</a>
+					</li>
+					<li>
+						<a href="">Синяя</a>
+					</li>
+					<li>
+						<a href="#" id="answer4">Зеленая</a>
+					</li>
+					<li>
+						<a href="">Бежевая</a>
+					</li>
+					<li>
+						<a href="">Оранжевая</a>
+					</li>
+				</ul>
+			</div>
+			<div id="quiz5" style="display: none;">
+				<div>Мы любим вместе...</div>
+				<ul class="lisp">
+					<li>
+						<a href="">учиться жизни</a>
+					</li>
+					<li>
+						<a href="">радовать людей</a>
+					</li>
+					<li>
+						<a href="">находить решения</a>
+					</li>
+					<li>
+						<a href="">кушать вкусно</a>
+					</li>
+					<li>
+						<a href="#" id="answer5">под дождем</a>
+					</li>
+				</ul>
+			</div>
+			<div id="quiz6" style="display: none;">
+				<h1>Давай уже</h1>
+				<a class="btn" href="newyear.html">нажимай;)</a>
+			</div>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">
+		window.onload = () => {
+			const quiz1 = document.getElementById('quiz1')
+			const quiz2 = document.getElementById('quiz2')
+			const quiz3 = document.getElementById('quiz3')
+			const quiz4 = document.getElementById('quiz4')
+			const quiz5 = document.getElementById('quiz5')
+			const quiz6 = document.getElementById('quiz6')
+			const answer1 = document.getElementById('answer1')
+			const answer2 = document.getElementById('answer2')
+			const answer3 = document.getElementById('answer3')
+			const answer4 = document.getElementById('answer4')
+			const answer5 = document.getElementById('answer5')
+
+			answer1.onclick = () => {
+				quiz1.style.display = 'none'
+				quiz2.style.display = 'block'
+			}
+			answer2.onclick = () => {
+				quiz2.style.display = 'none'
+				quiz3.style.display = 'block'
+			}
+			answer3.onclick = () => {
+				quiz3.style.display = 'none'
+				quiz4.style.display = 'block'
+			}
+			answer4.onclick = () => {
+				quiz4.style.display = 'none'
+				quiz5.style.display = 'block'
+			}
+			answer5.onclick = () => {
+				quiz5.style.display = 'none'
+				quiz6.style.display = 'block'
+			}
+		}
+	</script>
+
+</body>
+</html>
